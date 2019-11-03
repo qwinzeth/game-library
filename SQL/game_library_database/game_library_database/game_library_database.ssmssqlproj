@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<SqlWorkbenchSqlProject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="game_library_database">
+  <Items>
+    <LogicalFolder Name="Connections" Type="2" Sorted="true">
+      <Items>
+        <ConnectionNode Name="LAPTOP-EGCRK5EI:LAPTOP-EGCRK5EI\Matt">
+          <Created>2019-11-02T11:56:05.6446049-05:00</Created>
+          <Type>SQL</Type>
+          <Server>LAPTOP-EGCRK5EI</Server>
+          <UserName />
+          <Authentication>Windows Authentication</Authentication>
+          <InitialDB />
+          <LoginTimeout>30</LoginTimeout>
+          <ExecutionTimeout>0</ExecutionTimeout>
+          <ConnectionProtocol>NotSpecified</ConnectionProtocol>
+          <ApplicationName />
+        </ConnectionNode>
+      </Items>
+    </LogicalFolder>
+    <LogicalFolder Name="Queries" Type="0" Sorted="true">
+      <Items>
+        <FileNode Name="database_game_library.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:LAPTOP-EGCRK5EI:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>LAPTOP-EGCRK5EI</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>database_game_library.sql</FullPath>
+        </FileNode>
+        <FileNode Name="reviewers.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:LAPTOP-EGCRK5EI:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>LAPTOP-EGCRK5EI</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>reviewers.sql</FullPath>
+        </FileNode>
+        <FileNode Name="seed_data.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:LAPTOP-EGCRK5EI:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>LAPTOP-EGCRK5EI</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>seed_data.sql</FullPath>
+        </FileNode>
+        <FileNode Name="SQLQuery1.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:LAPTOP-EGCRK5EI:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>LAPTOP-EGCRK5EI</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>SQLQuery1.sql</FullPath>
+        </FileNode>
+        <FileNode Name="table_games.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:LAPTOP-EGCRK5EI:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>LAPTOP-EGCRK5EI</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>table_games.sql</FullPath>
+        </FileNode>
+      </Items>
+    </LogicalFolder>
+    <LogicalFolder Name="Miscellaneous" Type="3" Sorted="true">
+      <Items />
+    </LogicalFolder>
+  </Items>
+</SqlWorkbenchSqlProject>
