@@ -25,29 +25,29 @@
           <AssociatedConnUserName />
           <FullPath>database_game_library.sql</FullPath>
         </FileNode>
-        <FileNode Name="reviewers.sql">
-          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:LAPTOP-EGCRK5EI:True</AssociatedConnectionMoniker>
-          <AssociatedConnSrvName>LAPTOP-EGCRK5EI</AssociatedConnSrvName>
-          <AssociatedConnUserName />
-          <FullPath>reviewers.sql</FullPath>
-        </FileNode>
         <FileNode Name="seed_data.sql">
           <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:LAPTOP-EGCRK5EI:True</AssociatedConnectionMoniker>
           <AssociatedConnSrvName>LAPTOP-EGCRK5EI</AssociatedConnSrvName>
           <AssociatedConnUserName />
           <FullPath>seed_data.sql</FullPath>
         </FileNode>
-        <FileNode Name="SQLQuery1.sql">
-          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:LAPTOP-EGCRK5EI:True</AssociatedConnectionMoniker>
-          <AssociatedConnSrvName>LAPTOP-EGCRK5EI</AssociatedConnSrvName>
-          <AssociatedConnUserName />
-          <FullPath>SQLQuery1.sql</FullPath>
-        </FileNode>
         <FileNode Name="table_games.sql">
           <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:LAPTOP-EGCRK5EI:True</AssociatedConnectionMoniker>
           <AssociatedConnSrvName>LAPTOP-EGCRK5EI</AssociatedConnSrvName>
           <AssociatedConnUserName />
           <FullPath>table_games.sql</FullPath>
+        </FileNode>
+        <FileNode Name="table_reviewers.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:LAPTOP-EGCRK5EI:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>LAPTOP-EGCRK5EI</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>table_reviewers.sql</FullPath>
+        </FileNode>
+        <FileNode Name="table_reviews.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:LAPTOP-EGCRK5EI:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>LAPTOP-EGCRK5EI</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>table_reviews.sql</FullPath>
         </FileNode>
       </Items>
     </LogicalFolder>
