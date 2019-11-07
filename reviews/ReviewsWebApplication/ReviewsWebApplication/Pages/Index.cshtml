@@ -1,0 +1,26 @@
+﻿@page
+@model ReviewsWebApplication.Pages.IndexModel
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h2>Index</h2>
+
+<table>
+    <thead>
+        <tr>
+            <th>Game</th>
+            <th>Rating</th>
+        </tr>
+    </thead>
+    <tbody>
+        @{ foreach (var reviewOverview in Model.ReviewOverviews)
+            {
+        <tr>
+            <td>@reviewOverview.Title</td>
+            <td>@reviewOverview.RatingOf100</td>
+        </tr>
+            }
+        }
+    </tbody>
+</table>
