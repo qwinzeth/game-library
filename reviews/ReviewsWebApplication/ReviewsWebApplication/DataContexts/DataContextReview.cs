@@ -12,6 +12,7 @@ namespace ReviewsWebApplication.DataContexts
     {
         public DbSet<DTOGame> Games { get; set; }
         public DbSet<DTOReview> Reviews { get; set; }
+        public DbSet<DTOReviewer> Reviewers { get; set; }
 
         public DataContextReview(DbContextOptions<DataContextReview> options) : base(options)
         {
@@ -20,30 +21,18 @@ namespace ReviewsWebApplication.DataContexts
 
         public async Task<IEnumerable<DTOReviewOverview>> GetReviewOverviews(/* TODO: Pagination */)
         {
-            var gamesWithReviews = await Games.GroupJoin(Reviews, game => game.GameID, review => review.GameID, (game, reviews) => 
-                new {
-                    Game = game,
-                    Reviews = reviews
-                }).ToListAsync();
-
-            List<DTOReviewOverview> reviewOverviews = new List<DTOReviewOverview>();
-
-            foreach(var gameWithReviews in gamesWithReviews)
-            {
-                foreach (var review in gameWithReviews.Reviews)
-                {
-                    reviewOverviews.Add(new DTOReviewOverview()
-                    {
-                        GameID = gameWithReviews.Game.GameID,
-                        ReviewID = review.ReviewID,
-                        ReviewerID = review.ReviewerID,
-                        Title = gameWithReviews.Game.Title,
-                        RatingOf100 = review.RatingOf100
-                    });
-                }
-            }
-
-            return reviewOverviews;
+            return await Reviews.Join(Games, review => review.GameID, game => game.GameID, (review, game) => new {
+                Review = review,
+                Game = game
+            }).Join(Reviewers, reviewWithGames => reviewWithGames.Review.ReviewerID, reviewer => reviewer.ReviewerID, (reviewWithGames, reviewer) => 
+            new DTOReviewOverview {
+                ReviewID = reviewWithGames.Review.ReviewID,
+                GameID = reviewWithGames.Game.GameID,
+                ReviewerID = reviewer.ReviewerID,
+                Title = reviewWithGames.Game.Title,
+                RatingOf100 = reviewWithGames.Review.RatingOf100,
+                ReviewerName = reviewer.Name
+            }).ToListAsync();
         }
     }
 }

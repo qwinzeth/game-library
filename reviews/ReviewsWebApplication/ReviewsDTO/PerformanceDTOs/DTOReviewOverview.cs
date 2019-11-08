@@ -11,5 +11,6 @@ namespace ReviewsDTO.PerformanceDTOs
         public long GameID { get; set; }
         public int RatingOf100 { get; set; }
         public string Title { get; set; }
+        public string ReviewerName { get; set; }
     }
 }
