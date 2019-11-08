@@ -6,6 +6,7 @@ using System.Text;
 
 namespace ReviewsDTO
 {
+    [Table("reviews")]
     public class DTOReview
     {
         [Key]
