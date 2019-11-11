@@ -1,6 +1,4 @@
-﻿using GamesLegacyMVC.Models;
-using GamesLegacyMVC.Models.HomeModels;
-using GamesLegacySQL;
+﻿using GamesLegacySQL;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -22,7 +20,12 @@ namespace GamesLegacyMVC.Controllers
         // GET: Home
         public ActionResult Index()
         {
-            return View(new IndexModel(_sqlGames.GetGames()));
+            return View();
+        }
+
+        public JsonResult GetGames()
+        {
+            return Json(new { games = _sqlGames.GetGames() }, JsonRequestBehavior.AllowGet);
         }
     }
 }

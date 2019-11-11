@@ -1,24 +1,19 @@
-﻿@model GamesLegacyMVC.Models.HomeModels.IndexModel
-@{
+﻿@{
     ViewBag.Title = "Game List";
 }
 
-<h2>Game List</h2>
+    <h2>Game List</h2>
 
-<table>
-    <thead>
-        <tr>
-            <th>Title</th>
-            <th>Description</th>
-        </tr>
-    </thead>
-    <tbody>
-        @foreach (var game in Model.Games)
-        {
-            <tr>
-                <td>@game.Title</td>
-                <td>@game.Description</td>
-            </tr>
-        }
-    </tbody>
-</table>
+    <div ng-app="app">
+        <gameslist></gameslist>
+    </div>
+
+@section scripts {
+    <script type="text/javascript">
+        GamesLegacyMVC = window.GamesLegacyMVC || {};
+        GamesLegacyMVC.URLMap = GamesLegacyMVC.URLMap || {};
+        GamesLegacyMVC.URLMap.GetGames = '@Url.Action("GetGames", "Home")';
+        GamesLegacyMVC.URLMap.GamesListTemplate = '@Url.Content("~/Scripts/Home/GamesListTemplate.html")';
+    </script>
+    @Scripts.Render("~/bundles/home")
+}
