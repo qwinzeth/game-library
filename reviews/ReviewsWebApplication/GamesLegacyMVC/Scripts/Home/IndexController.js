@@ -1,20 +1,12 @@
 ﻿GamesLegacyMVC = window.GamesLegacyMVC || {};
-GamesLegacyMVC.IndexController = function IndexController() {
+GamesLegacyMVC.Index = function Index() {
     return {
-        GamesListController: function GamesListController($scope, $http) {
-            function getGamesSuccess(response) {
-                $scope.games = response.data.games;
-            }
-
-            function getGamesError(response) {
-                console.log(response);
-            }
-
-            $scope.games = [{ Title: "Loading..." }];
-            $http.get(GamesLegacyMVC.URLMap.GetGames, {}).then(getGamesSuccess, getGamesError);
+        IndexController: function ($scope) {
+            $scope.error = "";
         }
     };
 };
 
 angular.module('app', ['components'])
-    .controller('GamesList', GamesLegacyMVC.IndexController().GamesListController);
+    .controller('GamesList', GamesLegacyMVC.GamesList().GamesListController)
+    .controller('Index', GamesLegacyMVC.Index().IndexController);

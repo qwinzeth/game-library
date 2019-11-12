@@ -32,3 +32,8 @@ table, th, td {
 tbody tr:nth-child(odd) {
     background-color: #cccccc;
 }
+
+.error-text{
+    color: red;
+    margin-top: 5px;
+}

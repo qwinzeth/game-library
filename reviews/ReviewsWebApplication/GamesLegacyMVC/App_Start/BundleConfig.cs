@@ -23,8 +23,8 @@ namespace GamesLegacyMVC
                       "~/Scripts/bootstrap.js"));
 
             bundles.Add(new ScriptBundle("~/bundles/home").Include(
-                        "~/Scripts/Home/IndexController.js",
-                        "~/Scripts/Home/GamesListDirective.js"));
+                "~/Scripts/Home/GamesListDirective.js",
+                "~/Scripts/Home/IndexController.js"));
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",

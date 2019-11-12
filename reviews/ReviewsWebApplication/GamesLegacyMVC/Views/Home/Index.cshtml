@@ -4,8 +4,11 @@
 
     <h2>Game List</h2>
 
-    <div ng-app="app">
-        <gameslist></gameslist>
+    <div ng-app="app" ng-controller="Index">
+        <gameslist error="error"></gameslist>
+        <div class="error-text">
+            {{error}}
+        </div>
     </div>
 
 @section scripts {
