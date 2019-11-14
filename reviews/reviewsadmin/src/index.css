@@ -1,0 +1,18 @@
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 5px;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #cccccc;
+}
+
+.error-text{
+    color: red;
+    margin-top: 5px;
+}
+
+.right-align-text{
+	text-align: right;
+}

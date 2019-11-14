@@ -1,0 +1,7 @@
+{
+  "short_name": "Review App",
+  "name": "Video Game Review App",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#ffffff"
+}
